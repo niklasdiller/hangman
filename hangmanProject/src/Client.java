@@ -1,8 +1,7 @@
-import java.io.*;
 import java.net.*;
+import java.io.*;
 
 public class Client implements Runnable {
-    //2 threads, one for receiving messages from server, 1 for reveive console input
 
     private Socket client;
     private BufferedReader in;
@@ -11,36 +10,54 @@ public class Client implements Runnable {
 
     @Override
     public void run() {
-        try {
+        try{
             client = new Socket("127.0.0.1", 9999);
             out = new PrintWriter(client.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-            done = false;
             InputHandler inHandler = new InputHandler();
-            Thread t = new Thread(inHandler);  //because inputHandler is only one, not many
-            t.start(); //starts a new thread
+            Thread t = new Thread(inHandler);
+            t.start();
 
             String inMessage;
-            while ((inMessage = in.readLine()) != null) {
-                System.out.println(inMessage); //prints incoming messages
+            while((inMessage = in.readLine()) != null){
+                System.out.println(inMessage);
             }
-        } catch (IOException e) {
-            //TODO: hanlde
+        } catch (IOException e){
+            shutdown();
         }
     }
 
-    class InputHandler implements Runnable {
+    public void shutdown(){
+        done = true;
+        try {
+            in.close();
+            out.close();
+            if(!client.isClosed()){
+                client.close();
+            }
+        } catch(IOException e){
+            //ignore
+        }
+    }
+
+    class InputHandler implements Runnable{
 
         @Override
         public void run() {
             try {
-                BufferedReader inReader = new BufferedReader(new InputStreamReader(System.in));
-                while (!done) {
+                BufferedReader inReader = new BufferedReader(new InputStreamReader(System.in)); // get input from Command line
+                while(!done){
                     String message = inReader.readLine();
-                    out.println(message); //sends in to the server
+                    if(message.equals("/quit")){
+                        out.println(message);
+                        inReader.close();
+                        shutdown();
+                    } else {
+                        out.println(message);
+                    }
                 }
-            } catch (IOException e) {
-                //TODO: handle
+            } catch(IOException e){
+                shutdown();
             }
         }
     }
