@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture7.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture7.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture5.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture5.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture0.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture0.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture6.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture6.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture1.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture1.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture2.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture2.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.finalproject.app-main-22:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture8.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture8.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.finalproject.app-main-22:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture4.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture4.png"
+    },
+    {
+        "merged": "com.finalproject.app-merged_res-21:/drawable-mdpi_picture3.png.flat",
+        "source": "com.finalproject.app-react-16:/drawable-mdpi/picture3.png"
+    }
+]
